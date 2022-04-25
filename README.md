@@ -1,2 +1,2 @@
 # SParkHalos
-# Statistical Properties of Dark Matter Halos from N-Body Simulations
+## Statistical Properties of Dark Matter Halos from N-Body Simulations
