@@ -20,9 +20,9 @@ timestamp = datetime.isoformat(now)
 
 '''Redshifts to be computed'''
 #redshifts = ["3.000","2.000","1.100","0.500","0.200"]
+redshifts = ["0.200"]
 #redshifts = ["0.200"]
-#redshifts = ["0.200"]
-redshifts = ["8.000"]
+#redshifts = ["8.000"]
 
 '''Prameters from the simulation'''
 type, cosmo, intcont, sf, ef = 'base', 'c000', 'ph000', 0, 33
