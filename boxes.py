@@ -22,7 +22,7 @@ timestamp = datetime.isoformat(now)
 #redshifts = ["3.000","2.000","1.100","0.500","0.200"]
 #redshifts = ["0.200"]
 #redshifts = ["0.200"]
-redshifts = ["3.000"]
+redshifts = ["8.000"]
 
 '''Prameters from the simulation'''
 type, cosmo, intcont, sf, ef = 'base', 'c000', 'ph000', 0, 33
@@ -98,15 +98,13 @@ def convertmass(mass,N):
 #Dividing Boxes
 def calcboxes (size, cutside, halo_pos):
    print("Divideing boxes: "+ str(cutside))
-   if cutside == 1:
-      return
-   else:
-      nw_size = size/cutside
-      x=(halo_pos + (size/2))/nw_size
-      x = x.astype(int)
-      boxes = []
-      for i in range (len(x)):
-         boxes.append(x[i][0] + cutside*x[i][1] + cutside**2*x[i][2])
+
+   nw_size = size/cutside
+   x=(halo_pos + (size/2))/nw_size
+   x = x.astype(int)
+   boxes = []
+   for i in range (len(x)):
+      boxes.append(x[i][0] + cutside*x[i][1] + cutside**2*x[i][2])
    del halo_pos
    return boxes
 
